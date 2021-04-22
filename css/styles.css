@@ -1,0 +1,305 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --main-color: #212121;
+  --second-color: #757575;
+  --third-color: #fff;
+  --fourth-color: rgba(255, 255, 255, 0.6);
+  --hover-color: #2196f3;
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--third-color);
+  color: var(--main-color);
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding: 94px 0;
+}
+
+/* ===== LOGO ===== */
+.logo1,
+.logo2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.logo1 {
+  color: var(--main-color);
+}
+.logo2 {
+  color: var(--third-color);
+}
+.logo-span {
+  color: var(--hover-color);
+}
+/* ===== END LOGO ===== */
+
+/* ===== NAGŁÓWEK ===== */
+.menu-item .current {
+  color: var(--hover-color);
+}
+.menu-item-link,
+.header-contacts-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.menu-item-link {
+  color: var(--main-color);
+}
+.menu-item-link:hover,
+.menu-item-link:focus,
+.header-contacts-item-link:hover,
+.header-contacts-item-link:focus {
+  color: var(--hover-color);
+}
+.header-contacts-item-link {
+  color: var(--second-color);
+}
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  width: 254px;
+}
+.header-contacts {
+  display: flex;
+  width: 291px;
+  justify-content: space-between;
+}
+
+/* ===== END NAGŁÓWEK ===== */
+
+/* ===== STOPKA ===== */
+.footer {
+  background-color: var(--first-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  padding: 20px 0 0;
+}
+.address-list-item-link {
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+.location {
+  color: var(--third-color);
+}
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+  color: var(--hover-color);
+}
+/* ===== END STOPKA ===== */
+
+/* ========== STRONA AGENCJA ==========*/
+/* ===== SEKCJA "HEADER" ===== */
+.main-header {
+  background-color: var(--first-background-color);
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+}
+.main-header-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--third-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-header-button {
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--third-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* ===== END SEKCJA "HEADER" ===== */
+
+/* ===== NASZE ATUTY ===== */
+.advantages-list {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 94px;
+}
+.adavantages-list-item {
+  display: block;
+  margin: 15px;
+}
+.advantages-list-item-title {
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.advantages-list-item-title,
+.advantages-list-item-text {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.advantages-list-item-text {
+  line-height: 1.7;
+  color: var(--second-color);
+  width: 270px;
+}
+
+/* ===== END NASZE ATUTY ===== */
+
+/* ===== CZYM SIĘ ZAJMUJEMY ===== */
+
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* ===== END CZYM SIĘ ZAJMUJEMY ===== */
+
+/* ===== NASZ ZESPÓŁ ===== */
+.team {
+  background-color: var(--second-background-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item {
+  background-color: var(--third-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.teammate-photo {
+  display: block;
+}
+.teammate {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.teammate,
+.teammate-spec {
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+.teammate-spec {
+  color: var(--second-color);
+}
+/* ===== END NASZ ZESPÓŁ ===== */
+/* ========== END STRONA AGENCJA ==========*/
+
+/* ========== STRONA PORTFOLIO ========== */
+/* ===== FILTR =====*/
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-list-item {
+  margin-left: 8px;
+}
+.button-list-item:first-child {
+  margin-left: 0;
+}
+.button {
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--hover-color);
+  color: var(--third-color);
+}
+/* ===== END FILTR =====*/
+
+/* ===== PROJEKTY =====*/
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.projects-list-item-photo {
+  display: block;
+}
+.projects-list-item-description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.projects-list-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects-list-item-category {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+/* ===== END PROJEKTY =====*/
+/* ========== END STRONA PORTFOLIO ========== */
