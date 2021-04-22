@@ -152,7 +152,7 @@ margin-right: 10px;
 /* ===== SEKCJA "HEADER" ===== */
 .main-header {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(/images/background/background-img.jpg);
+  url(../images/background/background-img.jpg);
   height: 600px;
   max-width: 1600px;
   text-align: center;
