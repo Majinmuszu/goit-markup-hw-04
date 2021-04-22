@@ -43,7 +43,10 @@ ul {
 .section {
   padding: 94px 0;
 }
-
+.icon {
+  stroke: #AFB1B8;
+  fill: #AFB1B8;
+}
 /* ===== LOGO ===== */
 .logo1,
 .logo2 {
@@ -88,6 +91,9 @@ ul {
 }
 .header-contacts-item-link {
   color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   height: 80px;
@@ -104,10 +110,16 @@ ul {
 }
 .header-contacts {
   display: flex;
-  width: 291px;
+  width: 321px;
   justify-content: space-between;
 }
-
+.header-contacts-icon{
+margin-right: 10px;
+}
+.header-contacts-icon:hover {
+  stroke: var(--hover-color);
+  fill: var(--hover-color);
+}
 /* ===== END NAGŁÓWEK ===== */
 
 /* ===== STOPKA ===== */
@@ -139,8 +151,10 @@ ul {
 /* ========== STRONA AGENCJA ==========*/
 /* ===== SEKCJA "HEADER" ===== */
 .main-header {
-  background-color: var(--first-background-color);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(/images/background/background-img.jpg);
   height: 600px;
+  max-width: 1600px;
   text-align: center;
   padding-top: 200px;
 }
@@ -163,6 +177,8 @@ ul {
   color: var(--third-color);
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 42px;
+  border: none;
 }
 /* ===== END SEKCJA "HEADER" ===== */
 
@@ -193,6 +209,18 @@ ul {
   line-height: 1.7;
   color: var(--second-color);
   width: 270px;
+}
+.advantages-list-icon {
+display: block;
+}
+.advantages-list-icon-background {
+  width: 270px; 
+  height: 120px;
+  background-color: var(--second-background-color);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 /* ===== END NASZE ATUTY ===== */
@@ -239,6 +267,30 @@ ul {
 .teammate-spec {
   color: var(--second-color);
 }
+.teammate-social-links {
+  width: 206px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 16px 32px 0;
+}
+.teammate-social-links-ellipse {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teammate-social-links-ellipse:hover, 
+.teammate-social-links-icons:hover,
+.teammate-social-links-ellipse:focus, 
+.teammate-social-links-icons:focus {
+  background-color: var(--hover-color);
+  fill: #fff;
+  stroke: #fff;
+}
 /* ===== END NASZ ZESPÓŁ ===== */
 /* ========== END STRONA AGENCJA ==========*/
 
@@ -263,10 +315,16 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
+  padding: 6px 22px;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--hover-color);
   color: var(--third-color);
+  box-shadow: 0px 2px 2px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 /* ===== END FILTR =====*/
 
@@ -281,6 +339,11 @@ ul {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+.projects-list-item:hover {
+  box-shadow: 1px 4px 6px 0px #00000029;
+  box-shadow: 0px 4px 4px 0px #0000000f;
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
 .projects-list-item-photo {
   display: block;
