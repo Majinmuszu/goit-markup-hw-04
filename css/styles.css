@@ -269,7 +269,8 @@ ul {
 .teammate-social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 32px 0;
 }
 .social-list-link {
   color: #AFB1B8;
@@ -280,20 +281,33 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.social-list-link:hover{
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--hover-color);
-  fill: #fff;
-}
-.teammate-social-list-icons:hover {
-  fill: #fff;
+  color: #fff;
 }
 /* ===== END NASZ ZESPÓŁ ===== */
 
-
-
-
-
-
+/* ===== SEKCJA NASI KLIENCI ===== */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.clients-list-link{
+  display: flex;
+}
+.clients-icon {
+   color: #AFB1B8;
+}
+/* ===== END NASI KLIENCI ===== */
 /* ========== END STRONA AGENCJA ==========*/
 
 /* ========== STRONA PORTFOLIO ========== */
